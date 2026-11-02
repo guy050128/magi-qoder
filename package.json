@@ -1,0 +1,34 @@
+{
+  "name": "magi-qoder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MAGI three-sage deliberation console (ported from hirakujira/MAGI-System), backed by Qoder Cloud Agents.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "bootstrap": "node scripts/bootstrap-qca.mjs",
+    "probe": "node scripts/probe-qca.mjs",
+    "test:verdict": "node scripts/verdict-test.mjs"
+  },
+  "dependencies": {
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}

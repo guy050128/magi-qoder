@@ -1,0 +1,132 @@
+{
+  "referenceClips": {
+    "defence": {
+      "file": "defence-tenor.mp4",
+      "page": "https://tenor.com/view/neon-genesis-evangelion-screen-calculate-anime-gif-17152243",
+      "media": "https://media.tenor.com/B45n-g_GGmgAAAPo/neon-genesis-evangelion-screen.mp4",
+      "timingBasis": "MP4 timestamps: 22 frames at 100 ms; not a claim about the film master frame rate.",
+      "width": 640,
+      "height": 358,
+      "duration": 2.2,
+      "frameCount": 22,
+      "frameTimes": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        1.9,
+        2.0,
+        2.1
+      ],
+      "frames": [
+        "assets/frames/defence/000.webp",
+        "assets/frames/defence/001.webp",
+        "assets/frames/defence/002.webp",
+        "assets/frames/defence/003.webp",
+        "assets/frames/defence/004.webp",
+        "assets/frames/defence/005.webp",
+        "assets/frames/defence/006.webp",
+        "assets/frames/defence/007.webp",
+        "assets/frames/defence/008.webp",
+        "assets/frames/defence/009.webp",
+        "assets/frames/defence/010.webp",
+        "assets/frames/defence/011.webp",
+        "assets/frames/defence/012.webp",
+        "assets/frames/defence/013.webp",
+        "assets/frames/defence/014.webp",
+        "assets/frames/defence/015.webp",
+        "assets/frames/defence/016.webp",
+        "assets/frames/defence/017.webp",
+        "assets/frames/defence/018.webp",
+        "assets/frames/defence/019.webp",
+        "assets/frames/defence/020.webp",
+        "assets/frames/defence/021.webp"
+      ],
+      "sha256": "1bcf3f6c7c3c67d129b12e4a4c8ca498102c83aa6d00823dff7bd9c72a30336b"
+    }
+  },
+  "fonts": {
+    "cjk": {
+      "file": "TsukuhouShogoMin.woff2",
+      "source": "Original website public/fonts/TsukuhouShogoMin.woff2",
+      "sha256": "c462b2317ab361488e91afd3dc26ec666c5e11a1f1af4c105b2cc7779f7df4e3",
+      "role": "Approximate CJK display fallback; not the original Matisse EB."
+    },
+    "latin": {
+      "file": "ShareTechMono-Regular.ttf",
+      "css": "https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap",
+      "media": "https://fonts.gstatic.com/s/sharetechmono/v16/J7aHnp1uDWRBEqV98dVQztYldFc7pA.ttf",
+      "license": "ShareTechMono-OFL.txt",
+      "sha256": "5f6b57538a1a35469a038dc3073003cebc4c101ad7b3c219e9555a3b3c0a81d2",
+      "active": false
+    },
+    "referenceTypeface": {
+      "family": "Matisse EB",
+      "tv": "EVA-マティス-クラシック",
+      "rebuild": "EVA-マティス-スタンダード",
+      "official": "https://fontworks.co.jp/products/evamatisse/",
+      "exactFontDataAvailable": false,
+      "userChoice": "No original font file; approximate the reference images."
+    },
+    "localSystemRoles": {
+      "romanTitle": [
+        "Times New Roman",
+        "Times"
+      ],
+      "tvUnit": [
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial"
+      ],
+      "terminalAndTechnical": [
+        "Arial Narrow",
+        "DIN Condensed",
+        "Helvetica Neue"
+      ],
+      "provenance": "Visual approximation based on the reference frames, not verified identification of their original Latin font files. System fonts are referenced locally and not redistributed."
+    },
+    "headerDisplay": {
+      "family": "MAGI Reference Labels",
+      "file": "MagiReferenceLabels.woff",
+      "characters": "提訴決議",
+      "basedOn": "Noto Serif JP Black 900",
+      "source": "https://fonts.gstatic.com/l/font?kit=xn71YHs72GKoTvER4Gn3b5eMRtWGkp6o7MjQ2byYPebAOLtXTphzFs6MQb_yVjc&skey=311bf6d07cd0b6c8&v=v34",
+      "license": "SIL OFL 1.1",
+      "licenseFile": "MagiReferenceLabels-OFL.txt",
+      "method": "Clean outline subset of four glyphs plus space; proportions and spacing calibrated against the saved TV reference. Pixel tracing rejected because of video compression artifacts.",
+      "referenceFrame": "Existing tv-diagnostic.gif; used for proportions, weight and spacing, not pixel contours",
+      "sha256": "b9dbb9ac85c4cbbf8e5f5446c4aa806682b6d259c05b6dddf78b00a8882861fc",
+      "originalMatisseFontData": false
+    }
+  },
+  "limits": [
+    "These are publicly accessible excerpts, not verified film masters.",
+    "The complete initial ring closure has not been verified. Its reveal is a reconstruction.",
+    "The defence excerpt shows lateral port movement, not continuous whole-ring rotation.",
+    "TV deliberation preserves the existing website blink rather than replacing it with the GIF rhythm."
+  ],
+  "transitions": {
+    "bootToDefenceSeconds": 0.48,
+    "defenceToConsoleSeconds": 0.48,
+    "proposalToReviewSeconds": 0.42,
+    "provenance": "Original-inspired reconstruction using short signal loss, amber cards and stepped display registration. No continuous source shot verified.",
+    "clock": "Shared with reference frames, pause and seeking. Native reference clip durations retained.",
+    "reviewToUnitResultsSeconds": 0.48,
+    "unitResultsToFinalDecisionSeconds": 0.48
+  }
+}

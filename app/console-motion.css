@@ -1,0 +1,112 @@
+/* Native presentation only. The original console grid, fonts and form keep their styles. */
+.magi-main[hidden] { display: none; }
+.console-startup-cover {
+  position: fixed;
+  inset: 0;
+  z-index: 1090;
+  background: black;
+}
+.console-motion-controls {
+  position: fixed;
+  right: 12px;
+  bottom: 10px;
+  z-index: 2000;
+  display: flex;
+  gap: 6px;
+}
+.console-motion-controls button {
+  font: 11px var(--font-mono);
+  color: var(--amber);
+  border: 1px solid var(--amber-dim);
+  background: #080808;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+.console-motion-controls button:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+.console-motion-entry {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+.console-motion-entry > svg {
+  display: block;
+  flex: none;
+  width: min(100vw, calc(100vh * 640 / 358));
+  width: min(100dvw, calc(100dvh * 640 / 358));
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.console-motion-entry.console-motion-ready-link {
+  pointer-events: none;
+}
+.console-motion-entry.console-motion-ready-link > svg {
+  animation: console-motion-entry-exit 480ms steps(1, end) both;
+}
+.console-motion-signal {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  background: black;
+  color: var(--amber);
+  pointer-events: none;
+  font: bold clamp(12px, 3vw, 32px) var(--font-mono);
+  letter-spacing: .12em;
+  animation: console-motion-signal 480ms steps(1, end) both;
+}
+.console-motion-signal span { font-size: .65em; }
+.console-motion-phase-acceptance > .console-motion-signal { animation-duration: 420ms; }
+.console-motion-unit { position: relative; }
+.console-motion-unit-label { position: relative; z-index: 2; }
+.console-motion-cells { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.console-motion-vote {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  z-index: 3;
+  transform: translateX(-50%);
+  font-family: var(--font-ja);
+  font-size: 3.5cqw;
+  line-height: 1;
+  border: .25cqw double currentColor;
+  outline: .13cqw solid currentColor;
+  outline-offset: .25cqw;
+  padding: .3cqw .8cqw;
+  background: #000;
+  animation: console-motion-stamp 200ms ease-out both;
+  pointer-events: none;
+}
+.console-motion-final { animation: console-motion-badge 300ms ease-out both; }
+@keyframes console-motion-signal {
+  0%, 15% { opacity: 0; }
+  16%, 29% { opacity: .55; }
+  30%, 52% { opacity: 1; }
+  53%, 100% { opacity: 0; }
+}
+@keyframes console-motion-entry-exit {
+  0%, 84% { opacity: 1; }
+  85%, 100% { opacity: 0; }
+}
+@keyframes console-motion-stamp {
+  from { opacity: 0; transform: translateX(-50%) scale(1.15); }
+  to { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+@keyframes console-motion-badge { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .console-motion-entry { display: none; }
+  .console-motion-signal { display: none; }
+  .console-motion-vote, .console-motion-final { animation: none; }
+}
+
+/* Proposal transport is scoped to the existing console and never captures input. */
+.proposal-transfer { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 30; pointer-events: none; }
+[data-console-phase="acceptance"] .input-question.proposal-text-transferring { color: transparent; -webkit-text-fill-color: transparent; caret-color: transparent; }

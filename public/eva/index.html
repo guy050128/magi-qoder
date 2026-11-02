@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAGI / 三賢人システム</title><meta name="robots" content="noindex">
+<link rel="icon" href="data:,"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="live.css">
+<script src="frame-data.js" defer></script><script src="flow-model.js" defer></script><script src="scenes.js" defer></script><script src="live.js" defer></script>
+</head><body>
+<header class="masthead"><div class="identity"><span class="nerv">NERV</span><span class="division">特殊機関直属<br>汎用人型決戦兵器 支援システム</span></div><div class="edition">MAGI / ORIGINAL SEQUENCE<br><span>TOKYO-3 / GEOFRONT</span></div></header>
+<main><div class="section-heading"><h1>MAGI <span>三賢人システム</span></h1><span class="status-dot" id="status-code" role="status">CONNECTING</span></div>
+<nav class="chapters" aria-label="流程阶段" id="chapters"></nav>
+<section class="screen-shell" aria-label="MAGI 控制屏幕"><div class="screen-top"><span id="screen-title">MAGI-01 / CONNECTING</span><span id="screen-mode">PROTOCOL 01</span></div>
+<div class="theatre" id="theatre"><div class="scene" id="scene-tv"></div><div class="scene" id="scene-defence" hidden></div><div class="scene" id="scene-terminal" hidden></div><div class="scene" id="scene-boot" hidden></div><div class="return-line" id="return-line" aria-hidden="true" hidden></div><div class="signal-transition" id="signal-transition" aria-hidden="true" hidden><div class="signal-curtain" id="signal-curtain"></div><div class="signal-card" id="signal-card"><span id="signal-card-title"></span><strong id="signal-card-sub"></strong></div><div class="signal-register" id="signal-register"></div></div></div>
+<div class="screen-bottom"><span id="phase-label">接入系统</span><span id="screen-summary">ESTABLISHING CONNECTION</span></div></section>
+<div class="live-tools"><p class="phase-note" id="phase-note" aria-live="polite">正在接入三贤人系统…</p><button type="button" id="fullscreen">全屏</button></div>
+<form class="proposal" id="proposal-form"><label for="question">提 案<span>PROPOSAL / MAGI SYSTEM</span></label><textarea id="question" rows="3" maxlength="500" placeholder="输入想让 MAGI 审议的提案…" required></textarea><button type="submit" id="submit-proposal" disabled>審議開始 <span>↗</span></button><p id="form-message">等待系统就绪。</p></form>
+<div class="verdict-strip" id="verdict-strip" hidden aria-live="polite"><strong id="final-label"></strong><span id="final-explanation"></span></div>
+<footer class="live-footer"><span>INTERNAL POWER <b>●</b><br><span class="dim">MAGI SYSTEM / DELIBERATION CONTROL</span></span><div class="live-preferences"><label for="motion-mode">动画效果</label><select id="motion-mode"><option value="full">完整</option><option value="reduced">简化</option></select><button type="button" id="restart">重新启动</button><button type="button" id="help">使用说明</button><button type="button" id="classic">经典界面</button></div></footer>
+<p id="bridge-error" class="bridge-error" hidden>界面连接暂时不可用。<a href="../?view=classic" target="_top">进入经典界面</a></p>
+</main></body></html>

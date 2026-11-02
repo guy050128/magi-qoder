@@ -1,0 +1,18 @@
+services:
+  magi:
+    build: .
+    container_name: magi
+    ports:
+      - "127.0.0.1:3000:3000"
+    env_file:
+      - .env.local
+    volumes:
+      - ./.magi-state.json:/app/.magi-state.json:ro
+      - ./.magi-usage.json:/app/.magi-usage.json
+    restart: unless-stopped
+    networks:
+      - magi-network
+
+networks:
+  magi-network: # Define the custom network
+    name: magi-network

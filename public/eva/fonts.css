@@ -1,0 +1,14 @@
+/* Type roles follow the linked anime frames. Exact Matisse is used when locally installed. */
+@font-face{font-family:MAGI-Matisse-Classic;src:local("EVA-Matisse-Classic"),local("EVA-マティス-クラシック"),local("EVA-MatisseClassic"),local("FOT-MatissePro-EB");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:MAGI-CJK;src:url("../fonts/TsukuhouShogoMin.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+:root{--eva-display:"MAGI-Matisse-Classic","MAGI-CJK","Hiragino Mincho ProN","Songti SC",serif;--eva-serif:"Times New Roman",Times,serif;--eva-unit:"Helvetica Neue",Helvetica,Arial,sans-serif;--eva-tech:"Arial Narrow","DIN Condensed","Helvetica Neue",Arial,sans-serif;--font-ui:"Arial Narrow","Hiragino Sans GB","PingFang SC",Arial,sans-serif;--font-latin:var(--eva-tech);--font-cjk:var(--eva-display);--tech:var(--eva-tech);--jp:var(--eva-display)}
+/* Shared roles across startup, TV, result terminal and signal cards. */
+.nerv{font-family:var(--eva-serif);font-weight:900;letter-spacing:-3px}
+h1{font-family:var(--eva-serif)}
+.division,h1 span,.proposal>label,.proposal>button,.verdict-strip strong{font-family:var(--eva-display)}
+.scene .tech{font-family:var(--eva-tech);font-weight:700}
+#tv-svg .tech,.scene .unit-label{font-family:var(--eva-unit);font-weight:700}
+#terminal-svg .unit-label{font-family:var(--eva-tech);font-weight:700}
+.scene .jp{font-family:var(--eva-display);font-weight:900}
+.scene .serif{font-family:var(--eva-serif);font-weight:700}
+.signal-card strong{font-family:var(--eva-display)}
